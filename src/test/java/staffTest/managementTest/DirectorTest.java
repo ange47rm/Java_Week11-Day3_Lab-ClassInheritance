@@ -57,4 +57,10 @@ public class DirectorTest {
         director.raiseSalary(-80000.00);
         assertEquals(80000.00, director.getSalary(), 0.00);
     }
+
+    @Test
+    public void nameCannotBeChangedToNull(){
+        director.setName(null);
+        assertEquals("Hannah", director.getName());
+    }
 }

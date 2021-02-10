@@ -6,7 +6,7 @@ public abstract class Employee {
     private String NiNumber;
     private double salary;
 
-    public Employee(String name, String NiNumber, int salary){
+    public Employee(String name, String NiNumber, double salary){
         this.name = name;
         this.NiNumber = NiNumber;
         this.salary = salary;

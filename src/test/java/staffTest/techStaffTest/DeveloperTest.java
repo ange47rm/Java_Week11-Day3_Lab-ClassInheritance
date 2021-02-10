@@ -40,4 +40,10 @@ public class DeveloperTest {
     public void developerCanPayBonus() {
         assertEquals(300.00, developer.payBonus(), 0.00);
     }
+
+    @Test
+    public void preventSlavery(){
+        developer.raiseSalary(-30000.00);
+        assertEquals(30000.00, developer.getSalary(), 0.00);
+    }
 }

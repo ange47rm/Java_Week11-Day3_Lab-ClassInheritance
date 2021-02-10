@@ -40,4 +40,10 @@ public class DatabaseAdminTest {
     public void databaseAdminCanPayBonus() {
         assertEquals(220.00, databaseAdmin.payBonus(), 0.00);
     }
+
+    @Test
+    public void preventSlavery(){
+        databaseAdmin.raiseSalary(-22000.00);
+        assertEquals(22000.00, databaseAdmin.getSalary(), 0.00);
+    }
 }

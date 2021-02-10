@@ -42,6 +42,12 @@ public class ManagerTest {
     }
 
     @Test
+    public void preventSlavery(){
+        manager.raiseSalary(-45000.00);
+        assertEquals(45000.00, manager.getSalary(), 0.00);
+    }
+
+    @Test
     public void managerCanPayBonus() {
         assertEquals(450.00, manager.payBonus(), 0.00);
     }
